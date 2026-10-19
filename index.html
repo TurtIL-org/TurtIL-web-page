@@ -15,24 +15,8 @@
   <script>document.documentElement.classList.add('js');</script>
 </head>
 
-<!--
-  ============================================================
-  TURTIL WIKI - WHERE TO ADD YOUR CONTENT
-  Search this file (Ctrl/Cmd+F) for these tags:
-
-    EDIT-1  Introduction ......... tagline + intro paragraph
-    EDIT-2  About the software ... text, "at a glance" box, feature cards
-    EDIT-3  Demo video ........... paste a YouTube/Vimeo iframe or a <video>
-    EDIT-4  Feedback ............. description + Google Forms link
-    EDIT-5  Contact (footer) ..... LinkedIn, email, location
-
-  Colors and fonts live in styles.css (see the :root block).
-  ============================================================
--->
-
 <body>
 
-  <!-- Logo + icon sprite (no need to edit) -->
   <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
     <symbol id="turtil-mark" viewBox="93 228 800 800">
       <path d="M493 337 L697 447 L698 678 L497 798 L291 678 L290 447 Z" fill="none" stroke="currentColor" stroke-width="48" stroke-linejoin="round"/>
@@ -60,7 +44,6 @@
 
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- ====================== NAVIGATION ====================== -->
   <header class="site-header">
     <div class="container nav">
       <a class="brand" href="#introduction" aria-label="TurtIL home">
@@ -84,21 +67,16 @@
 
   <main id="main">
 
-    <!-- ====================== 1. INTRODUCTION ====================== -->
     <section class="hero" id="introduction" aria-labelledby="hero-title">
       <div class="container hero-grid">
         <div class="hero-copy">
           <span class="eyebrow reveal"><i class="dot"></i> Project Wiki</span>
           <h1 id="hero-title" class="reveal" style="--d:.08s">Turt<span>IL</span></h1>
 
-          <!-- ============ [EDIT-1] INTRODUCTION ============
-               1a: replace the tagline (one short line)
-               1b: replace the introduction paragraph -->
           <p class="tagline reveal" style="--d:.16s">From Molecules to Insight - Faster.</p>
           <p class="lead reveal" id="intro-text" style="--d:.24s">
             Physicochemical machine learning based system for R&D cost reduction.
           </p>
-          <!-- ============ END [EDIT-1] ============ -->
 
           <div class="hero-actions reveal" style="--d:.32s">
             <a class="btn btn-primary" href="#demo">
@@ -118,7 +96,6 @@
       </div>
     </section>
 
-    <!-- ====================== 2. ABOUT THE SOFTWARE ====================== -->
     <section class="section" id="about" aria-labelledby="about-title">
       <div class="container">
         <div class="section-head reveal">
@@ -127,19 +104,13 @@
         </div>
 
         <div class="about-grid">
-          <!-- ============ [EDIT-2a] ABOUT TEXT ============
-               Replace / add <p> paragraphs as needed. -->
           <div class="card prose reveal" id="about-text">
             <p>TurtIL is a machine learning system designed to predict the physicochemical and electrochemical properties of pure ionic liquids. Its purpose is to reduce the time, cost, and energy associated with the research and development of industrial applications by evaluating candidate ionic liquids in just a few seconds.</p>
             <p> Plans are in place to add predictions for new properties in the future. Some of these include the Electrochemical Stability Window, HOMO/LUMO Energies, Dielectric Constant, Ionization potential, Toxicity, Melting Point, Glass Transition Temperature etc.
             </p> 
             <p> TurtIL has evolved into a standalone desktop application featuring a user-friendly interface. The ultimate objective is to provide a fast, scalable computational-screening tool for the design and development of ionic liquids.</p>
           </div>
-          <!-- ============ END [EDIT-2a] ============ -->
 
-          <!-- ============ [EDIT-2b] "AT A GLANCE" BOX ============
-               Wikipedia-style fact box. Edit the values (right side),
-               or add / remove <div class="row"> lines. -->
           <aside class="card infobox reveal" style="--d:.1s" aria-label="TurtIL at a glance">
             <div class="infobox-head">
               <svg aria-hidden="true"><use href="#turtil-mark"/></svg>
@@ -152,12 +123,8 @@
               <div class="row"><dt>License</dt><dd>TBD</dd></div>
             </dl>
           </aside>
-          <!-- ============ END [EDIT-2b] ============ -->
         </div>
 
-        <!-- ============ [EDIT-2c] FEATURE CARDS ============
-             Three highlights. Edit titles + text, or duplicate a
-             <article class="card feature"> block to add more. -->
         <div class="feature-grid">
           <article class="card feature reveal">
             <div class="hex-icon"><svg class="icon" aria-hidden="true"><use href="#i-zap"/></svg></div>
@@ -175,11 +142,9 @@
             <p>Resistance to flow.</p>
           </article>
         </div>
-        <!-- ============ END [EDIT-2c] ============ -->
       </div>
     </section>
 
-    <!-- ====================== 3. DEMO VIDEO ====================== -->
     <section class="section section-dark" id="demo" aria-labelledby="demo-title">
         <div class="container">
         <div class="section-head reveal">
@@ -187,7 +152,6 @@
             <h2 id="demo-title">See TurtIL in action</h2>
         </div>
 
-        <!-- ============ [EDIT-3] DEMO VIDEO ============ -->
        <div class="video-frame reveal" id="demo-video-slot">
             <iframe
                 src="https://www.youtube.com/embed/Ve0vlxi_n3o?si=hHhpwqZooHiZziQr"
@@ -197,11 +161,10 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen>
             </iframe>
-        </div><!-- ============ END [EDIT-3] ============ -->
+        </div>
       </div>
     </section>
 
-    <!-- ====================== 4. FEEDBACK ====================== -->
     <section class="section" id="feedback" aria-labelledby="feedback-title">
       <div class="container">
         <div class="feedback-card reveal">
@@ -209,27 +172,16 @@
             <span class="kicker">Feedback</span>
             <h2 id="feedback-title">Help us make TurtIL better</h2>
 
-            <!-- ============ [EDIT-4a] FEEDBACK TEXT ============ -->
             <p class="feedback-text" id="feedback-text">
 
             </p>
-            <!-- ============ END [EDIT-4a] ============ -->
           </div>
 
-          <!-- ============ [EDIT-4b] EMBEDDED GOOGLE FORM ============
-               In Google Forms: Send > the "<>" (embed) tab > Copy.
-               Then EITHER:
-                 A) replace the whole <iframe ...> below with the code Google gave you, OR
-                 B) just replace YOUR_FORM_ID in the src (keep "/viewform?embedded=true").
-               The form fills the width of this box automatically.
-               If the form looks cut off or has too much empty space, change the
-               height="1250" number to fit. -->
           <div class="form-frame">
             <iframe id="feedback-form"
                     src="https://docs.google.com/forms/d/e/1FAIpQLSclZ1xCoGdGKsP17P2AixjDumNZUpK5CHpAScUMdsrfS6x_eg/viewform?usp=header"
                     width="640" height="1250" title="TurtIL feedback form" loading="lazy">Loading&hellip;</iframe>
           </div>
-          <!-- ============ END [EDIT-4b] ============ -->
         </div>
       </div>
     </section>
@@ -237,7 +189,6 @@
 
   </main>
 
-  <!-- ====================== 5. CONTACT (BOTTOM OF PAGE) ====================== -->
   <footer class="site-footer" id="contact" aria-labelledby="contact-title">
     <div class="container">
       <div class="footer-head">
@@ -245,10 +196,6 @@
         <h2 id="contact-title">Get in touch</h2>
       </div>
 
-      <!-- ============ [EDIT-5] CONTACT INFO ============
-           5a: LinkedIn  - replace the href and the visible text
-           5b: Email     - replace the address in href (keep "mailto:") and in the text
-           5c: Location  - replace the text (optionally wrap in a Google Maps link) -->
       <div class="contact-grid">
         <a class="contact-item" id="contact-linkedin" href="https://www.linkedin.com/company/turtilproject" target="_blank" rel="noopener noreferrer">
           <span class="contact-icon"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></span>
@@ -274,7 +221,6 @@
           </span>
         </div>
       </div>
-      <!-- ============ END [EDIT-5] ============ -->
 
       <div class="footer-bottom">
         <a class="brand brand-sm" href="#introduction" aria-label="Back to top">
