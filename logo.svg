@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="33 168 920 920" width="512" height="512" role="img" aria-label="TurtIL logo">
+  <title>TurtIL</title>
+  <!-- Background: the exact logo green -->
+  <rect x="33" y="168" width="920" height="920" rx="180" fill="#285414"/>
+
+  <g fill="#ffffff">
+    <!-- Shell outline (hexagon) -->
+    <path d="M493 337 L697 447 L698 678 L497 798 L291 678 L290 447 Z"
+          fill="none" stroke="#ffffff" stroke-width="48" stroke-linejoin="round"/>
+
+    <!-- Shell marks (socket-style bars) -->
+    <path d="M374 478 L484 414 L509 456 L398 519 Z"/>
+    <path d="M395 617 L506 681 L482 723 L371 658 Z"/>
+    <rect x="585" y="498" width="48" height="129"/>
+
+    <!-- Front flippers -->
+    <path d="M97 498 A225 225 0 0 1 322 274 L322 389 A110 110 0 0 0 212 498 Z"/>
+    <path d="M658 274 A225 225 0 0 1 882 498 L767 498 A110 110 0 0 0 658 389 Z"/>
+
+    <!-- Back flippers -->
+    <path d="M249 723 L333 771 A93 93 0 0 0 368 899 L319 983 A190 190 0 0 1 249 723 Z"/>
+    <path d="M740 723 L656 771 A93 93 0 0 1 621 899 L670 983 A190 190 0 0 0 740 723 Z"/>
+  </g>
+</svg>
